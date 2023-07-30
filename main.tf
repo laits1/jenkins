@@ -4,7 +4,7 @@ provider "google" {
   region      = "asia-northeast3"  # 원하는 리전으로 변경
 }
 
-resource "goognle_compute_istance" "default" {
+resource "google_compute_istance" "default" {
   name         = "terraform"
   machine_type = "n1-standard-1"
   zone         = "asia-northeast3"  # 원하는 존으로 변경
