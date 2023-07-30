@@ -9,7 +9,6 @@ pipeline {
     stage('Pull') {
       steps {
         git(url: "${GIT_URL}", branch: "master", changelog: true, poll: true)
-        ls
       }
     }
   }
